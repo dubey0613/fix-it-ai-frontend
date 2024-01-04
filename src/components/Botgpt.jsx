@@ -8,7 +8,7 @@ const Botgpt = () => {
 
   const handleSend = async () => {
     try {
-      const apiUrl = `http://localhost:8000/chat?input_text=${encodeURIComponent(inputText)}`;
+      const apiUrl = `https://fixitbe.onrender.com/chat?input_text=${encodeURIComponent(inputText)}`;
       const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
