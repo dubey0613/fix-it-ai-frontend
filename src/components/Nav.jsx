@@ -16,7 +16,7 @@ import {
     useToast
 } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
-const Navbar = () => {
+const Nav = () => {
     const storedUser = localStorage.getItem('user');
     const navigate = useNavigate();
     const toast = useToast();
@@ -76,4 +76,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Nav;

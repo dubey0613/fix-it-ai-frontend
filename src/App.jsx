@@ -3,11 +3,12 @@ import Home from './pages/Home/Home'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import About from './pages/About'
 import Salesgpt from './pages/Salesgpt'
-import Navbar from './components/Navbar'
+import Nav from './components/Nav'
+
 const App = () => {
   return (
     <Router>
-      <Navbar />
+        <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<About />} />
