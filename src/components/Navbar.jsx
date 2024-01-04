@@ -1,5 +1,3 @@
-// Navbar.jsx
-
 import React from 'react';
 import logo from '../assets/logo.svg';
 import { Link } from 'react-router-dom';
@@ -23,7 +21,6 @@ const Navbar = () => {
     const navigate = useNavigate();
     const toast = useToast();
     const handleLogout = () => {
-        // Implement your logout logic here
         try{localStorage.removeItem('user');
         navigate('/');
         toast({
