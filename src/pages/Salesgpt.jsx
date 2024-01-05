@@ -15,7 +15,7 @@ const Salesgpt = () => {
         const storedUser = localStorage.getItem('user');
         if (storedUser) {
             // User is authenticated, redirect to dashboard or handle as needed
-            navigate('/salesgpt');
+            //navigate('/salesgpt');
             toast({
                 title: 'Login Successful!',
                 description: "You've successfully logged in.",
